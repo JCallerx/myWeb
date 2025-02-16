@@ -22,7 +22,8 @@ body {
     height: 100px;
     background-color: rgb(182, 0, 0);
     transform: rotate(-45deg);
-    animation: beat 1s infinite;
+    display: inline-block;  /* Ensures scale works correctly */
+    animation: beat 1s infinite ease-in-out;
 }
 
 /* Creating the rounded lobes */
