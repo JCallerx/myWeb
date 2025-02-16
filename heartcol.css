@@ -32,7 +32,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    background-color: inherit;  /* Inherits the flashing effect */
+    background-color: inherit; /* Ensures the color flashes together */
     border-radius: 50%;
 }
 
@@ -58,4 +58,10 @@ body {
         transform: scale(1.2) rotate(-45deg);
         background-color: rgb(255, 105, 105); /* Flashing red */
     }
+}
+
+/* Apply the same animation to the lobes */
+.heart::before,
+.heart::after {
+    animation: beat 1s infinite;
 }
