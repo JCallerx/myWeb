@@ -10,8 +10,8 @@ body {
 
 
 #right, #left {
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     background-color: rgb(182, 0, 0);
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
