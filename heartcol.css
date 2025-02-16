@@ -2,7 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 5%;
     animation-name: beat;
     animation-duration: 2s;
     animation-iteration-count: infinite;
