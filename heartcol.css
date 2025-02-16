@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     display: flex;
     flex-direction: column;
@@ -9,24 +10,21 @@ body {
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 10px;
+/* Ensures content (text) stays on top */
+.content {
+    margin-bottom: 30px; /* Space between text and heart */
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
+/* Heart container */
 .heart {
     position: relative;
     width: 100px;
     height: 100px;
-    margin-top: 20px; /* Space between text and heart */
     transform: rotate(-45deg);
     animation: beat 1s infinite;
 }
 
+/* Creating heart shape */
 .heart::before,
 .heart::after {
     content: '';
@@ -47,6 +45,7 @@ ul {
     top: 0;
 }
 
+/* Heart animation */
 @keyframes beat {
     0%, 100% {
         transform: scale(1) rotate(-45deg);
