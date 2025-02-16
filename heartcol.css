@@ -5,70 +5,43 @@ body {
     height: 100vh;
     background-color: white;
     overflow: hidden;
+    margin: 0;
 }
 
 .heart {
     position: relative;
     width: 100px;
     height: 100px;
-}
-
-#right, #left {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(182, 0, 0);
-    position: absolute;
-    top: 0;
-}
-
-#right {
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    left: 50px;
     transform: rotate(-45deg);
+    animation: beat 1s infinite;
 }
 
-#right::before {
+.heart::before,
+.heart::after {
     content: '';
+    position: absolute;
     width: 100px;
     height: 100px;
     background-color: rgb(182, 0, 0);
-    position: absolute;
-    display: block;
     border-radius: 50%;
-    left: -50px;
-    top: 0;
 }
 
-#left {
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+.heart::before {
+    top: -50px;
     left: 0;
-    transform: rotate(45deg);
 }
 
-#left::before {
-    content: '';
-    width: 100px;
-    height: 100px;
-    background-color: rgb(182, 0, 0);
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    right: -50px;
+.heart::after {
+    left: 50px;
     top: 0;
 }
 
 @keyframes beat {
     0%, 100% {
-        transform: scale(1);
+        transform: scale(1) rotate(-45deg);
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.2) rotate(-45deg);
         background-color: lightpink;
     }
-}
-
-.heart {
-    animation: beat 1s infinite;
 }
