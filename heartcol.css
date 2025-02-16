@@ -32,7 +32,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    background-color: inherit; /* Ensures the color flashes together */
+    background-color: inherit; /* Ensures color flashes together */
     border-radius: 50%;
 }
 
@@ -55,13 +55,7 @@ body {
         background-color: rgb(182, 0, 0);
     }
     50% {
-        transform: scale(1.2) rotate(-45deg);
+        transform: scale(1.2) rotate(-45deg);  /* Heart grows */
         background-color: rgb(255, 105, 105); /* Flashing red */
     }
-}
-
-/* Apply the same animation to the lobes */
-.heart::before,
-.heart::after {
-    animation: beat 1s infinite;
 }
