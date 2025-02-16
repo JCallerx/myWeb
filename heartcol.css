@@ -20,7 +20,7 @@ body {
     position: relative;
     width: 100px;
     height: 100px;
-    background-color: rgb(182, 0, 0); /* This fixes the missing bottom part */
+    background-color: rgb(182, 0, 0);
     transform: rotate(-45deg);
     animation: beat 1s infinite;
 }
@@ -32,7 +32,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    background-color: rgb(182, 0, 0);
+    background-color: inherit;  /* Inherits the flashing effect */
     border-radius: 50%;
 }
 
@@ -52,6 +52,10 @@ body {
 @keyframes beat {
     0%, 100% {
         transform: scale(1) rotate(-45deg);
+        background-color: rgb(182, 0, 0);
     }
     50% {
-        transfor
+        transform: scale(1.2) rotate(-45deg);
+        background-color: rgb(255, 105, 105); /* Flashing red */
+    }
+}
