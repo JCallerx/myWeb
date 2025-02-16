@@ -20,11 +20,12 @@ body {
     position: relative;
     width: 100px;
     height: 100px;
+    background-color: rgb(182, 0, 0); /* This fixes the missing bottom part */
     transform: rotate(-45deg);
     animation: beat 1s infinite;
 }
 
-/* Creating heart shape */
+/* Creating the rounded lobes */
 .heart::before,
 .heart::after {
     content: '';
@@ -35,11 +36,13 @@ body {
     border-radius: 50%;
 }
 
+/* Left rounded lobe */
 .heart::before {
     top: -50px;
     left: 0;
 }
 
+/* Right rounded lobe */
 .heart::after {
     left: 50px;
     top: 0;
@@ -51,7 +54,4 @@ body {
         transform: scale(1) rotate(-45deg);
     }
     50% {
-        transform: scale(1.2) rotate(-45deg);
-        background-color: lightpink;
-    }
-}
+        transfor
