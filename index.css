@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+.bgimage{
+    background-image: url(https://www.weddinggownpreservationkit.com/blog-images/zoom-wedding/zoom-enchanted-forest-wedding-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 750px;
+}
+button{
+    margin-top: 20px;
+    display: inline-block;
+}
+footer.p{
+    display:inline-block;
+    margin-bottom: 0px;
+
+}
+
+label{
+    display:flex;
+    flex-direction: column;
+}
+.card{
+    max-width: 20%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 100px ;
+}
