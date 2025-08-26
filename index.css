@@ -102,5 +102,10 @@ input[type="submit"]:hover{
     transform: scale(1.05);
     transition: 0.3s ease-in-out;    
 }
+.fully{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
 
 
