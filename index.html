@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carla and Jonathan's Wedding</title>
     <link rel="stylesheet" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="bgimage">
-        <img class="card" src="content\Location.png" width="300px" >
+        <img class="card" src="content\Location.png" >
     </div>  
-    <div class="rsvp">
     <h1>Carla & Jonathan</h1>
     <form>
     <label for="name">Full Name:</label>
-    <input name="name" type="name" id="name"><br>
-    <button type="radio" value="yes">Will Attend</button>
-    <button type="radio" value="no">Will not Attend</button>
+    <input required name="name" type="name" id="name"><br>
+    <div class="radio-group">
+
+        <input class="buttons" type="radio" name="value" value="yes" id="yes">
+        <label for="yes" class="radio_label">Will Attend</label>
+
+        <input class="buttons" type="radio" name="value" value="no" id="no">
+        <label for="no" class="radio_label">Will Not Attend</label>
+    
+    </div>
+    <input type="submit">
     </form>
 
-    </div>
    
 </body>
 <footer>
-    <p>FRIDAY, MARCH 6</p>
-    <p>671 SW PRADO AVE</p>
+    <p>Friday, March 6</p>
+    <p>671 SW Prado Ave.</p>
 </footer>
 </html>
